@@ -1,0 +1,19 @@
+.bg-menu{
+    background-color:rgba(25,24,28,1)
+}
+.xred{
+    color: rgba(236,30,81,1);
+}
+.bg-xred{
+    background-color: rgba(236,30,81,1);
+}
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0em;
+  }
+.overlay {
+    /*background-color: #EEEEEE;*/
+    position: absolute;
+    z-index:9999;
+}
