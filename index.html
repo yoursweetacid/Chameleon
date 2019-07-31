@@ -5,14 +5,17 @@
         <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/fontello.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        
     </head>
-    <body class="sans-serif bg-white">
+    <body class="sans-serif bg-white" style="overflow-x: hidden">
         <div class="cf">
-            <div class="fl sticky z-9999" style="width: 45px;">    <!--sidebar-->
-                <div class="bg-black white-80" style=" height:100vh;">
+            <div class="fl sticky z-9999 pointer-events" style="width: 45px;"> 
+<!--sidebar-->  
+                <div class="bg-black white-80 fadeInLeft animated" style=" height:100vh;">
                     <div class="db tc bg-menu" style="height:45px; padding-top:28%">
-                        <img src="file:///F:/Documents/Studies/Practise/Chameleon/images/menu.svg"
-                        style="width:18px; height:18px" >
+                        <button title="Toggle sidebar"></button>
                     </div>
                     <p class="pv5 pr1 v-top ma2 f5 fw3 white-40" 
                     style="-webkit-transform: rotate(180deg); transform: rotate(180deg); writing-mode: tb-rl;">
@@ -32,13 +35,29 @@
                         </div>
                     </div>
                 </div>
+                <div id="sidebar" class="collapsed">
+                    <div class="pl5 f5">
+                        <div class="pl3">
+                            <a href="#top" class="dib link dim pb2 pt3 white-30">Наверх</a></br>
+                            <a href="#numbers" class="dib link dim pv2 white">Цифры</a></br>
+                            <a href="#service" class="dib link dim pv2 white">Услуги</a></br>
+                            <a href="#cases" class="dib link dim pv2 white">Кейсы</a></br>
+                            <a href="#clients" class="dib link dim pv2 white">Клиенты</a></br>
+                            <a href="#men" class="dib link dim pv2 white">Бизнесмены</a></br>
+                            <a href="#reviews" class="dib link dim pv2 white">Отзывы</a></br>
+                            <a href="#rewards" class="dib link dim pv2 white">Награды</a></br>
+                            <a href="#contacts" class="dib link dim pv2 white">Контакты</a></br>
+                            <a href="#projects" class="dib link dim pv2 white">Проекты</a></br>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="fl" style="width: 100%; margin-top: -100vh;">   <!--main area-->
+<!--main area-->
+            <div id="top" class="fl" style="width: 100%; margin-top: -100vh;">
                 <div class="cf pl5-l pl4 ml2">
-
-                    <div class="fl w-50-l w-100">   <!--half-->
-                        <div class="f2 fw7 pl3">
+                    <div class="fl w-50-l w-100">
+<!--half-->   
+                        <div class="f2 fw7 pl3 fadeInDown animated">
                             <div class="overlay f7 fw5 black-60 pl4 mt2">
                                  Агентство </br>по привлечению клиентов
                             </div>
@@ -47,48 +66,48 @@
                             </div>
                         </div>
                         <div class="pl5">
-                            <p class="lh-title f2 fw8 pt5">
+                            <p class="lh-title f2 fw8 pt5 fadeInDown animated delay-1s">
                                 Генерируем заявки.</br>
                                 Приводим клиентов.</br>
                                 Увеличиваем прибыль.
                             </p>
-                            <p class="f6 measure lh-copy">
+                            <p class="f6 measure lh-copy fadeInDown animated delay-1s slow">
                                     Ваши клиенты в интернете. 
                                     И Ваш бизнес обязан быть там тоже. 
                                     Если вы хотите это сделать самостоятельно 
                                     или чтобы это сделали за Вас, то Вы в правильном месте.
                             </p>
-                            <div class="pt3 pb5">
-                                <a class="f7 grow no-underline br-pill ph4 pv3 mb2 dib white bg-xred" href="#0">УДВОИТЬ ПРОДАЖИ В БИЗНЕС</a>
+                            <div class="pt3 pb5 fadeInUp animated delay-1s slow">
+                                <a class="f7 grow no-underline br-pill ph4 pv3 mb2 dib white bg-xred pulse animated infinite" href="#0">УДВОИТЬ ПРОДАЖИ В БИЗНЕС</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="fl w-50-l w-100 bg-black" style="min-width:28em;">   <!--second half with image grid-->
+<!--second half with image grid-->
+                    <div class="fl w-50-l w-100 bg-black zoomIn animated" style="min-width:28em;">   
                         <div class="db">
-                            <div class="w-50 fl">
+                            <div class="w-50-l w-100 fl">
                                 <a href="#" class="fl w-100 link overflow-hidden">
-                                    <div role="img" class="relative link white aspect-ratio--4x6" 
+                                    <div role="img" class="relative link white aspect-ratio--4x6 zoomIn animated delay-1s" 
                                     style="background: url(https://i.ibb.co/3T1yndj/01-01.png) no-repeat center center; background-size: cover;">
                                         <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Портфолио</p>
                                         <p class="pl4 pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Наша гордость</p>
                                         <div class="absolute pl4 fl w-100" style="bottom: 5%;">
-                                            <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20" href="#0">
+                                            <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20 pulse animated infinite" href="#0">
                                                 <i class="icon-right-open-mini white-50"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="w-50 fl">
+                            <div class="w-50-l w-100 fl">
                                 <div class="db">
                                     <a href="#" class="fl w-100 link overflow-hidden">
-                                        <div role="img" class="relative link white aspect-ratio--4x3"
+                                        <div role="img" class="relative link white aspect-ratio--4x3 zoomIn animated delay-2s"
                                         style="background: url(https://i.ibb.co/LxF9gk6/01-02.png) no-repeat center center; background-size: cover;">
                                             <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Кто мы такие?</p>
                                             <p class="pl4 pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Наша команда</p>
                                             <div class="absolute pl4 fl w-100" style="bottom: 5%;">
-                                                <a class="f6 link br-pill ba ph3 pv2 mb2 dib white-50 hover-bg-white-20" href="#0">
+                                                <a class="f6 link br-pill ba ph3 pv2 mb2 dib white-50 hover-bg-white-20 pulse animated infinite" href="#0">
                                                     Подробнее
                                                 </a>
                                             </div>
@@ -97,12 +116,12 @@
                                 </div>
                                 <div class="db">
                                     <a href="#" class="fl w-100 link overflow-hidden">
-                                        <div role="img" class="relative link white aspect-ratio--4x3" 
+                                        <div role="img" class="relative link white aspect-ratio--4x3 zoomIn animated delay-3s" 
                                         style="background: url(https://i.ibb.co/Gxpfvjs/01-03.png) no-repeat center center; background-size: cover;">
                                             <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Блог</p>
                                             <p class="pl4 pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Все самое </br>интересное </br>здесь</p>
                                             <div class="absolute pl4 fl w-100" style="bottom: 10%">
-                                                <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20" href="#0">
+                                                <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20 pulse animated infinite" href="#0">
                                                     <i class="icon-right-open-mini white-50"></i>
                                                 </a>
                                             </div>
@@ -113,47 +132,47 @@
                         </div>
                         <div class="dib w-100">
                             <a href="#" class="fl w-100 link overflow-hidden">
-                                <div role="img" class="relative link white aspect-ratio--16x9" 
+                                <div role="img" class="relative link white aspect-ratio--16x9 zoomIn animated delay-4s" 
                                 style="background: url(https://i.ibb.co/FYjB439/01-04.png) no-repeat center center; background-size: cover;">
                                 <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Контакты</p>
                                 <p class="pl4 pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Мы всегда на связи и ждем </br>Вас в нашем офисе</p>
-                                            <div class="absolute pl4 fl w-100" style="bottom: 10%;">
-                                            <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20" href="#0">
-                                                <i class="icon-right-open-mini white-50"></i>
-                                            </a>
-                                        </div>
+                                    <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-50 hover-bg-white-20 pulse animated infinite" href="#0">
+                                            <i class="icon-right-open-mini white-50"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </a>
                         </div>
                     </div>    
                 </div>
-            <!--second block-->       
-            <div class="bg-black pl5-l pl4" style="min-height:100vh">
+<!--nambers-->       
+            <div id="numbers" class="bg-black pl5-l pl4" style="min-height:100vh">
                 <div class="pl5">
                     <p class="lh-title f2 fw8 pa0 ma0 pt6 white measure">
                         Xameleon  —  одна из сильнейших команд в Беларуси по привлечению клиентов из интернета
                     </p>
-                    <div class="cf">
-                        <div class="fl w-25-l w-50">
-                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure">
+                    <div class="cf pb6">
+                        <div class="fl w-20-l w-50 zoomIn animated">
+                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure animated pulse infinite slow">
                                 <span class="xred f0 fw8">6</span></br> лет на рынке </br>
                                 интернет маркетинга
                             </p>
                         </div>
-                        <div class="fl w-25-l w-50">
-                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure">
+                        <div class="fl w-25-l w-50 zoomIn animated delay-1s">
+                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure animated pulse infinite slow delay-1s">
                                 <span class="xred f0 fw8">546</span></br> успешно выполненных </br>
                                 проектов
                             </p>
                         </div>
-                        <div class="fl w-25-l w-50">
-                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure">
+                        <div class="fl w-20-l w-50 zoomIn animated delay-2s">
+                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure animated pulse infinite slow delay-2s tc-l">
                                 <span class="xred f0 fw8">4</span></br> года средний стаж </br>
                                 наших сотрудников
                             </p>
                         </div>
-                        <div class="fl w-25-l w-50">
-                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure">
+                        <div class="fl w-25-l w-50 zoomIn animated delay-3s">
+                            <p class="lh-title f5 fw5 pa0 ma0 pt6 white-50 measure animated pulse infinite slow delay-3s tc-l">
                                 <span class="xred f0 fw8">28</span></br> наград и </br>
                                 номинаций
                             </p>
@@ -161,62 +180,853 @@
                     </div>
                 </div>   
             </div>
-
-            <!--third block-->
-
-            <div class="bg-white pl5-l pl4" style="min-height:70vh">
+<!--service-->
+            <div id="service" class="bg-white pl5-l pl4" style="min-height:70vh">
                 <div class="pl5">
-                    <p class="lh-title f2 fw8 pa0 ma0 pt6 black measure">
+                    <p class="lh-title f2 fw8 pa0 ma0 pt6 black measure fadeInDown animated">
                         Мы учим и делаем то, в чём разбираемся лучше всех на рынке: как превращать «клики в клиентов»
                     </p>
-                    <p class="lh-title f3 fw7 pa0 ma0 pt4 black measure">
+                    <p class="lh-title f3 fw7 pa0 ma0 pt4 black measure fadeInDown animated delay-1s">
                         Этому Вас не научат ни в школе, ни в университете...
                     </p>
-                    <p class="lh-title f5 fw5 pa0 ma0 pt4 black-80 measure-wide pb0">
+                    <p class="lh-title f5 fw5 pa0 ma0 pt4 black-80 measure-wide pb0 fadeInDown animated delay-2s">
                         Система образования в сфере маркетинга просто хромает и идёт на дно, все кому не лень называют себя "маркетологом", не зная даже значения этого слова. Тысячи предпринимателей строят бизнес без навыков маркетинга, которые просто необходимы для роста и развития бизнеса. Появляется всё больше горе "маркетологов", которые что и делают, так сливают бюджеты пройдя быстрые курсы бизнес-м... школ. Мы восполнили этот пробел и создали образовательные программы, услуги и мероприятия, которые учат предпринимателей и маркетологов, как превращать «клики в клиентов».
                     </p>
-                    
                 </div>   
             </div>
-            <div class="cf bg-white ">
-                <div class="fl w-50-l w-100">
-                    <article class="center mw6 br4 pv4 grow">
-                        <div role="img" class="relative link white br4" 
-                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/03_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; padding-right: 120%">
-                            <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка рекламных компаний в интернете и привлечение клиентов</p>
+            <div class="cf pl5 pr6-l pb5">
+                <div class="ph5">
+                    <div class="fl pr3-l w-50-l w-100">
+                        <article class="center w-100 br4 pv0-l pv4 zoomIn animated delay-2s">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/03_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка рекламных компаний в интернете и привлечение клиентов</p>   
                                 <div class="absolute pl4 fl w-100" style="bottom: 10%">
-                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white grow bg-xred" href="#0">
+                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white bg-xred pulse animated infinite" href="#0">
                                         ОБСУДИТЬ ПРОЕКТ<i class="ml3 icon-right-open-mini white-50"></i>
                                     </a>
                                 </div>
                             </div>
-                    </article> 
-                </div>
-                <div class="fl w-50-l w-100">
-                    <article class="center-m mw6 br4 pv4">
-                        <div role="img" class="relative link white br4" 
-                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/03_02.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; padding-right: 120%">
-                            <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Образовательные программы
+                        </article> 
+                    </div>
+                    <div class="fl pl3-l w-50-l w-100">
+                        <article class="center w-100 br4 pv0-l pv4 zoomIn animated delay-3s">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/03_02.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Образовательные программы
                                     для предпринимателей
-                                    и маркетологов</p>
-                            
-                        </div>
-                    </article> 
+                                    и маркетологов
+                                </p>
+                            </div>
+                        </article>  
+                    </div>
                 </div>
             </div>
-            <!--fourth block-->
-            <div class="bg-black pl5-l pl4">
-                <div class="cf">
-                    <div class="fl w-75">
-                        <p class="lh-title f2 fw8 pa0 ma0 pt6 black measure">
-                            Мы учим и делаем то, в чём разбираемся лучше всех на рынке: как превращать «клики в клиентов»
+<!--cases-->
+            <div>
+                <div id="cases" class="bg-black pl5-l pl4" style="min-height: 40vh;">
+                    <div class="cf pl5 pb4">
+                        <div class="fl w-75">
+                            <p class="lh-title f2-l f3 fw8 pa0 ma0 pt6 white measure-narrow fadeInDown animated">
+                                Мы сами на практике применяем 
+                                то, 
+                                чему учим... И это работает
+                            </p>
+                        </div>
+                        <div class="fl w-25">
+                            <p class="lh-title f5 fw4 pa0 ma0 pt6 white measure-narrow fadeInDown animated delay-1s">
+                                За 6 лет работы </br> 
+                                мы выполнили 546 проектов
+                                в 60+ отраслях бизнеса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pl5 bounceInRight animated delay-2s">
+                        <p class="dib mr3 f7 xred">ВСЕ</p>
+                        <p class="dib mr3 f7 white-50">САЙТЫ</p>
+                        <p class="dib mr3 f7 white-50">LANDING PAGE</p>
+                        <p class="dib mr3 f7 white-50">ЛОГОТИПЫ</p>
+                        <p class="dib mr3 f7 white-50">ФИРМЕННЫЙ СТИЛЬ</p>
+                        <p class="dib mr3 f7 white-50">ПОЛИГРАФИЯ</p>
+                        <p class="dib mr3 f7 white-50">НАРУЖНАЯ РЕКЛАМА</p>
+                        <p class="dib mr3 f7 white-50">СОЦИАЛЬНЫЕ СЕТИ</p>
+                    </div>
+                </div>
+                <div class="cf pl4 bg-black zoomIn animated">
+                    <div class="fl w-third-l w-100 zoomIn animated delay-1s">
+                        <a href="#" class="fl w-100 link overflow-hidden">
+                            <div role="img" class="relative link white aspect-ratio--9x16" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_01.png) no-repeat top; background-size: cover;padding-bottom:187.5%">
+                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Бизнес пробуждение 3.0</p>
+                                <div class="pl4 pt4 fl w-100">
+                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">КЕЙС</p>
+                                    </a>
+                                </div>
+                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-right-open-mini white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fl w-two-thirds-l w-100 zoomIn animated delay-2s">
+                        <div class="cf">
+                            <div class="fl w-100">
+                                <a href="#" class="fl w-100 link overflow-hidden">
+                                    <div role="img" class="relative link white aspect-ratio--16x9" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_02.png) no-repeat center center; background-size: cover;">
+                                        <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Swuden</p>
+                                        <div class="pl4 pt4 fl w-100">
+                                            <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН LANDING PAGE</p>
+                                            </a>
+                                        </div>
+                                        <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                            <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                <i class="icon-right-open-mini white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="fl w-100">
+                                <div class="cf">
+                                    <div class="fl w-50-l w-100 zoomIn animated delay-3s">
+                                        <a href="#" class="fl w-100 link overflow-hidden">
+                                            <div role="img" class="relative link white aspect-ratio--4x3" 
+                                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_03.png) no-repeat center center; background-size: cover;">
+                                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">MAXIKIDS</p>
+                                                <div class="pl4 pt4 fl w-100">
+                                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН LANDING PAGE</p>
+                                                    </a>
+                                                </div>
+                                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                        <i class="icon-right-open-mini white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="fl w-50-l w-100 zoomIn animated delay-4s">
+                                        <a href="#" class="fl w-100 link overflow-hidden">
+                                            <div role="img" class="relative link white aspect-ratio--4x3" 
+                                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_04.png) no-repeat center center; background-size: cover;">
+                                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Столкшницы</p>
+                                                <div class="pl4 pt4 fl w-100">
+                                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН КВИЗ И LANDING PAGE</p>
+                                                    </a>
+                                                </div>
+                                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                        <i class="icon-right-open-mini white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cf pl4 zoomIn animated bg-black">
+                    <div class="fl w-60-l w-100 ">
+                        <div class="cf">
+                            <div class="fl w-100 zoomIn animated delay-1s">
+                                <a href="#" class="fl w-100 link overflow-hidden">
+                                    <div role="img" class="relative link white aspect-ratio--16x9" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_05.png) no-repeat center center; background-size: cover;">
+                                        <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">ФРОСТ</p>
+                                        <div class="pl4 pt4 fl w-100">
+                                            <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН LANDING PAGE</p>
+                                            </a>
+                                        </div>
+                                        <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                            <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                <i class="icon-right-open-mini white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="fl w-100">
+                                <div class="cf">
+                                    <div class="fl w-50-l w-100 zoomIn animated delay-2s">
+                                        <a href="#" class="fl w-100 link overflow-hidden">
+                                            <div role="img" class="relative link white aspect-ratio--4x3" 
+                                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_07.png) no-repeat center center; background-size: cover;">
+                                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Доставка грузов</p>
+                                                <div class="pl4 pt4 fl w-100">
+                                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН LANDING PAGE</p>
+                                                    </a>
+                                                </div>
+                                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                        <i class="icon-right-open-mini white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="fl w-50-l w-100 zoomIn animated delay-3s">
+                                        <a href="#" class="fl w-100 link overflow-hidden">
+                                            <div role="img" class="relative link white aspect-ratio--4x3" 
+                                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_08.png) no-repeat center center; background-size: cover;">
+                                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Пивоварня</p>
+                                                <div class="pl4 pt4 fl w-100">
+                                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">ДИЗАЙН LANDING PAGE</p>
+                                                    </a>
+                                                </div>
+                                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                                        <i class="icon-right-open-mini white"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl w-40-l w-100 zoomIn animated delay-4s">
+                        <a href="#" class="fl w-100 link overflow-hidden">
+                            <div role="img" class="relative link white aspect-ratio--9x16" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/04_06.png) no-repeat center center; background-size: cover;padding-bottom:140.6%">
+                                <p class="pl4 pt4 ma0 white f3 fw8 fl w-100">Бизнес пробуждение 2.0</p>
+                                <div class="pl4 pt4 fl w-100">
+                                    <a class="f6 link br-pill ph3 pv2 mb2 dib white ba b--dashed b--white-50" href="#0">
+                                        <p class="ma0 white-50 f7 fw1 fl w-100 mt0">КЕЙС</p>
+                                    </a>
+                                </div>
+                                <div class="absolute pl4 fl w-100" style="bottom: 10%;">
+                                    <a class="f6 link br-pill ph2 pv2 mb2 dib white bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-right-open-mini white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!--clients-->
+            <div id="clients" class="pl5-l pl4" style="min-height: 90vh">
+                <div class="cf pb6 pl5">
+                    <div class="fl w-50-l w-100 ">
+                        <p class="lh-title f2 fw8 pa0 ma0 pt6 black measure-narrow pr2 fadeInDown animated">
+                            Именно поэтому нам доверяют как малый и средний бизнес, лидеры своих отраслей, так и крупные компании</br>
+                            <span class="xred underline">по всему миру</span>
                         </p>
                     </div>
-                    <div class="fl w-25">
-
+                    <div class="fl w-50-l w-100 pr5">
+                        <div class="cf zoomIn animated delay-1s">
+                            <div class="fl w-100">
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden pt6">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_01.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a>    
+                                </div>
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden pt6">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_02.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden pt6">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_03.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fl w-100">
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_04.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_05.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="fl w-third">
+                                    <a href="#" class="fl w-100 link overflow-hidden">
+                                        <div role="img" class="relative link white aspect-ratio--1x1" 
+                                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/05_06.png) no-repeat center center; background-size: cover;">        
+                                        </div>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+<!--men-->
+            <div id="men" class="bg-black pl5-l pl4" id="clients" style="background-position:center; height:auto; width:100%;">
+                <div class="pl5 pb5">
+                    <div class="cf">
+                        <div class="fl w-80">
+                            <p class="lh-title f2 fw8 pa0 ma0 pt6 white measure-narrow fadeInDown animated">
+                                Среди клиентов есть и</br>
+                                <span class="xred underline">известные предприниматели</span>
+                            </p>
+                        </div>
+                        <div class="fl w-20 pt6">
+                            <div class="fl mr3 pt4">
+                                <a class="f6 link br-pill ba ph2 pv2 mb2 dib xred hover-bg-white-10" href="#0">
+                                    <i class="icon-left-open-mini xred"></i>
+                                </a>     
+                            </div>
+                            <div class="fl pt4">
+                                <a class="f6 link br-pill ba ph2 pv2 mb2 dib xred hover-bg-white-10" href="#0">
+                                    <i class="icon-right-open-mini xred"></i>
+                                </a>    
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="scrolling-wrapper-flexbox pb6 bg-black">   
+                    <div class="card pl5 mr3 pr4 animated bounceInRight slower">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_01.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Дмитрий Портнягин</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Бизнес блогер №1 в России</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>
+                    <div class="card pr4 mr3 animated bounceInRight slower delay-1s">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_02.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Михаил Гребенюк</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Серийный предприниматель, инвестор</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>
+                    <div class="card pr4 mr3 animated bounceInRight slower delay-2s">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_03.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Кирилл Куницкий</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Российский журналист, политик</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>
+                    <div class="card pr4 mr3 animated bounceInRight slower delay-3s">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_04.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Андрей Онистрат</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Серийный предприниматель, инвестор</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>
+                    <div class="card pr4 mr3 animated bounceInRight slower delay-4s">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_05.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Олег Чанов</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Серийный предприниматель, инвестор</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>
+                    <div class="card pr4 mr3 animated bounceInRight slower delay-5s">
+                        <div>
+                            <a href="#" class="fl w-100 link overflow-hidden">
+                                <div role="img" class="relative link white br4" 
+                                style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/06_01.png) no-repeat center center; background-size: cover; padding-top: 105%; width:16rem;">        
+                                </div>
+                                <div class="pt4">
+                                    <p class="ma0 white f4 fw5 fl mr2 ">Дмитрий Портнягин</p>
+                                    <img class="fl mt1" src="images/verified.png" style="width: 16px; height: 16px;">
+                                </div>
+                                <p class="pt2 ma0 white-50 f7 fw1 fl w-100 mt0">Бизнес блогер №1 в России</p>
+                                <div class="pt3 fl">
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-dark-blue" href="#0">
+                                            <i class="icon-vkontakte white-30"></i>
+                                        </a>
+                                    </div>
+                                    <div class="fl mr2">
+                                        <a class="f6 link br-pill ba ph2 pv2 mb2 dib white-30 hover-bg-hot-pink hover-dark-pink" href="#0">
+                                            <i class="icon-instagram white-30"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>               
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <!--reviwes-->
+            <div id="reviews" class="pl5-l pl4">
+                <div class="pl5 pb5">
+                    <p class="lh-title f2 fw8 pa0 ma0 pt6 pb5 black measure animated fadeInDown">
+                        Нас любят наши клиенты, о чем говорит <span class="xred">1-ое место в рейтинге байнета</span> по удовлетворенности клиентов и куча отзывов
+                    </p>
+                    <div class="cf">
+                        <div class="fl w-75 animated zoomIn">
+                            <div class="cf">
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_01.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_02.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_03.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl w-75 animated zoomIn delay-1s">
+                            <div class="cf">
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_04.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_05.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_06.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl w-75 animated zoomIn delay-2s">
+                            <div class="cf">
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_07.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_08.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                                <div class="fl w-third">
+                                    <div role="img" class="relative link white br2" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/07_09.png) no-repeat center center; background-size: cover; padding-top: 135%">        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt5 pl5 center animated pulse infinite" style="padding-left:32%">
+                        <a class="f7 link br-pill ph3 pv3 mb2 white grow bg-xred" href="#0">
+                            ПОКАЗАТЬ ЕЩЕ<i class="ml3 icon-right-open-mini white-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!--reviews-->
+            <div class="pl5-l pl4" id="">
+                <div class="pl5 pb5">
+                    <p class="lh-title f2 fw8 pa0 ma0 pt6 pb5 black measure animated fadeInDown">
+                        Ну и еще немного отзывов
+                    </p>
+                </div>
+            </div>
+            <div class="cf pl5 pr6-l">
+                <div class="ph5">
+                    <div class="fl pr3-l w-50-l w-100 animated zoomIn">
+                        <article class="center w-100 br4 pv0-l pv4">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/08_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка Landing Page</p>
+                                <div class="absolute fl w-100" style="bottom: 40%; left:45%">
+                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white grow bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-play white"></i>
+                                    </a>
+                                </div>
+                                <div class="absolute fl bb w-100 b--white-20" style="bottom: 25%;"></div>
+                                <div class="absolute fr" style="bottom: 10%; right: 5%;">
+                                    <a class="f6 fw7 link br-pill ph3 pv2 white bg-white xred" href="#0">
+                                        3 мин
+                                    </a>
+                                </div>
+                                <div class="absolute fl" style="bottom: 10%; left: 5%;">
+                                    <a class="f6 fw1 link br-pill ph3 pv2  white-50" href="#0">
+                                        Анатолий Андреев, Беларусь
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+                    </div>
+                    <div class="fl pl3-l w-50-l w-100 animated zoomIn delay-1s">
+                        <article class="center w-100 br4 pv0-l pv4">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/08_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка Landing Page</p>
+                                <div class="absolute fl w-100" style="bottom: 40%; left:45%">
+                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white grow bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-play white"></i>
+                                    </a>
+                                </div>
+                                <div class="absolute fl bb w-100 b--white-20" style="bottom: 25%;"></div>
+                                <div class="absolute fr" style="bottom: 10%; right: 5%;">
+                                    <a class="f6 fw7 link br-pill ph3 pv2 white bg-white xred" href="#0">
+                                        3 мин
+                                    </a>
+                                </div>
+                                <div class="absolute fl" style="bottom: 10%; left: 5%;">
+                                    <a class="f6 fw1 link br-pill ph3 pv2  white-50" href="#0">
+                                        Анатолий Андреев, Беларусь
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+            <div class="cf pl5 pr6-l pb4">
+                <div class="ph5">
+                    <div class="fl pr3-l w-50-l w-100 animated zoomIn delay-2s">
+                        <article class="center w-100 br4 pv4-l pv4">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/08_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка Landing Page</p>
+                                <div class="absolute fl w-100" style="bottom: 40%; left:45%">
+                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white grow bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-play white"></i>
+                                    </a>
+                                </div>
+                                <div class="absolute fl bb w-100 b--white-20" style="bottom: 25%;"></div>
+                                <div class="absolute fr" style="bottom: 10%; right: 5%;">
+                                    <a class="f6 fw7 link br-pill ph3 pv2 white bg-white xred" href="#0">
+                                        3 мин
+                                    </a>
+                                </div>
+                                <div class="absolute fl" style="bottom: 10%; left: 5%;">
+                                    <a class="f6 fw1 link br-pill ph3 pv2  white-50" href="#0">
+                                        Анатолий Андреев, Беларусь
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+                    </div>
+                    <div class="fl pl3-l w-50-l w-100 animated zoomIn delay-3s">
+                        <article class="center w-100 br4 pv4-l pv4">
+                            <div role="img" class="relative link white br4" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/08_01.png) no-repeat center center; background-size: cover; max-height: 3em; padding-bottom: 50%; ">
+                                <p class="lh-title pl4 pt4 ma0 white f4 fw8 absolute measure-narrow w-100 measure">Разработка Landing Page</p>
+                                <div class="absolute fl w-100" style="bottom: 40%; left:45%">
+                                    <a class="f7 link br-pill ph3 pv3 mb2 dib white grow bg-xred pulse animated infinite" href="#0">
+                                        <i class="icon-play white"></i>
+                                    </a>
+                                </div>
+                                <div class="absolute fl bb w-100 b--white-20" style="bottom: 25%;"></div>
+                                <div class="absolute fr" style="bottom: 10%; right: 5%;">
+                                    <a class="f6 fw7 link br-pill ph3 pv2 white bg-white xred pulse animated infinite" href="#0">
+                                        3 мин
+                                    </a>
+                                </div>
+                                <div class="absolute fl" style="bottom: 10%; left: 5%;">
+                                    <a class="f6 fw1 link br-pill ph3 pv2  white-50" href="#0">
+                                        Анатолий Андреев, Беларусь
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+                    </div>
+                </div>
+            </div>
+<!--rewards-->
+            <div id="rewards" class="pl5-l pl4 bg-xred" id="rating">
+                <div class="cf pl5 pb4">
+                    <div class="fl w-50">
+                        <p class="lh-title f2-l f3 fw8 pa0 ma0 pt6 white measure-narrow fadeInDown animated">
+                            Нас знают и уважают в </br>digital-среде
+                        </p>
+                    </div>
+                    <div class="fl w-50">
+                        <p class="lh-title f4 fw5 pa0 ma0 pt6 white measure fadeInDown animated">
+                            Ежегодно мы занимаем высокие места в авторитетных рейтингах — на данный момент входим в ТОП-20 маркетинговых агентств Беларуси
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-xred pl5 pr6 pb4 zoomIn animated">
+                    <div class="cf bg-white">
+                        <div role="img" class="mw6-l fl w-40-l w-100" 
+                        style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/09_01.png) no-repeat center center; background-size: cover; padding-bottom: 46% ">
+                        </div>
+                        <div class="fl w-60-l">
+                            <p class="pl4 pl5-l pt2 black f3 fw7">РЕЙТИНГ БАЙНЕТА 2017</p>  
+                            <p class="pl4 pl5-l f6 lh-copy measure-wide black pr2">
+                                Предпраздничное настроение этого года для нас задают результаты "Рейтинга Байнета"!</br> </br>
+                                Показателем лучшего результата нашей работы мы считаем благодарность клиентов, их повторное обращение за дополнительными услугами или их рекомендации о нас своим друзьям и партнерам.</br></br>
+                                Участие в Рейтинге Байнета 2017 для нас явилось возможностью увидеть объективные итоги по проектам, узнать честное мнение о степени нашего профессионализма, и, конечно, еще раз напомнить о себе белорусскому рынку. Не станем скрывать, что всегда и во всем хочется быть первыми. Наверное, с таким желанием на церемониию проекта «Рейтинг Байнета» пришли представители каждой компании-участника. По крайней мере, надеемся на это. Ведь именно желание каждой компании победить в Рейтинге создает здоровую конкуренцию и позволяет удивлять клиентов - в самом хорошем смысле этого слова.         
+                            </p>
+                            <p class="pl4 pl5-l xred f6 fw6 underline">Читать полностью</p>
+                            <div class="pl4 pl5-l">
+                                <a class="f7 link br-pill pv2 mb2 dib black-50" href="#0">
+                                    <i class="fa fa-calendar-o black-50 mr2"></i>6 дкабря 2017 года
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-xred pl5 pr6 pb5 zoomIn animated delay-1s">
+                        <div class="cf bg-white">
+                            <div role="img" class="mw6-l fl w-40-l w-100" 
+                            style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/09_02.png) no-repeat center center; background-size: cover; padding-bottom: 46% ">
+                            </div>
+                            <div class="fl w-60-l">
+                                <p class="pl4 pl5-l pt2 black f3 fw7">РЕЙТИНГ БАЙНЕТА 2017</p>  
+                                <p class="pl4 pl5-l f6 lh-copy measure-wide black pr2">
+                                    Предпраздничное настроение этого года для нас задают результаты "Рейтинга Байнета"!</br> </br>
+                                    Показателем лучшего результата нашей работы мы считаем благодарность клиентов, их повторное обращение за дополнительными услугами или их рекомендации о нас своим друзьям и партнерам.</br></br>
+                                    Участие в Рейтинге Байнета 2017 для нас явилось возможностью увидеть объективные итоги по проектам, узнать честное мнение о степени нашего профессионализма, и, конечно, еще раз напомнить о себе белорусскому рынку. Не станем скрывать, что всегда и во всем хочется быть первыми. Наверное, с таким желанием на церемониию проекта «Рейтинг Байнета» пришли представители каждой компании-участника. По крайней мере, надеемся на это. Ведь именно желание каждой компании победить в Рейтинге создает здоровую конкуренцию и позволяет удивлять клиентов - в самом хорошем смысле этого слова.         
+                                </p>
+                                <p class="pl4 pl5-l xred f6 fw6 underline">Читать полностью</p>
+                                <div class="pl4 pl5-l">
+                                    <a class="f7 link br-pill pv2 mb2 dib black-50" href="#0">
+                                        <i class="fa fa-calendar-o black-50 mr2"></i>6 дкабря 2017 года
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+<!--contacts-->
+            <div id="contacts" class="cover bg-left bg-center-l bg-menu" style="background-image: url(file:///F:/Documents/Studies/Practise/Chameleon/images/map.png); padding-bottom: 45%; min-height: 100vh">
+                <div class="pl5-l pl4" id="rating">
+                    <div class="pl5 pb4">
+                        <p class="lh-title f2-l f3 fw8 pa0 ma0 pt6 white measure-narrow fadeInDown animated">
+                            Посетите наш офис в </br>центре Минска
+                        <p>  
+                    </div>
+                    <div class="pl5 mw6">
+                        <div class="cf bg-white">
+                            <div class="absolute zoomIn animated" style="right:10%">
+                                <div class="fr w-100" style="background-image: url(file:///F:/Documents/Studies/Practise/Chameleon/images/bg.png); ">
+                                    <p class="pl4 pl5-l pr6 pt3 black f3 fw7">Контакты</p>
+                                    <p class="pl4 pl5-l f7 measure-wide black-50">
+                                        офис
+                                    </p>
+                                    <p class="pl4 pl5-l f6 lh-copy measure-wide black pr2">
+                                        г.Минск, ул. Платонова, </br>д.43, оф.204
+                                    </p>
+                                    <p class="pl4 pl5-l f7 measure-wide black-50">
+                                        телефон
+                                    </p>
+                                    <p class="pl4 pl5-l f6 lh-copy measure-wide black pr2">
+                                        +375 (33) 373-73-99</br>+375 (44) 83-83-38           
+                                    </p>
+                                    <p class="pl4 pl5-l f7 measure-wide black-50">
+                                        электронная почта
+                                    </p>
+                                    <p class="pl4 pl5-l f6 lh-copy measure-wide black pr2 pb4">
+                                        manager@xameleon.by
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+<!--projects-->
+            <div id="projects" class="pl5-l pl4 bg-menu" id="projects">
+                <div class="cf pl5 pb5">
+                    <p class="lh-title f2-l f3 fw8 pa0 ma0 pt6 white measure-narrow fadeInDown">
+                       Наши проекты
+                    </p>
+                </div>
+                <div class="cf w-80 pl5-l pl4 pb6">
+                    <div class="w-third-l w-100 fl zoomIn animated">
+                        <div class="pb6">
+                            <div class="">
+                                <a href="#" class=" link">
+                                    <div role="img" class="relative link white br4" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/10_01.png) no-repeat center center; background-size: cover; padding-top: 40%; width:16rem;">        
+                                    </div>
+                                    <div class="pt4">
+                                        <p class="ma0 white f6 fw5 fl mr2 measure-narrow">Xameleon.by — создаём лучшие рекламные кампании в интернете и приводим клиентов</p>   
+                                    </div>
+                                </a>               
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="w-third-l w-100 fl zoomIn animated delay-1s">
+                        <div class="pb6">
+                            <div class="">
+                                <a href="#" class=" link">
+                                    <div role="img" class="relative link white br4" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/10_03.png) no-repeat center center; background-size: cover; padding-top: 40%; width:16rem;">        
+                                    </div>
+                                    <div class="pt4">
+                                        <p class="ma0 white f6 fw5 fl mr2 measure-narrow">Сообщество маркетологов — объединение лучших гениев маркетинга в СНГ </p>   
+                                    </div>
+                                </a>               
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="w-third-l w-100 fl zoomIn animated delay-2s">
+                        <div class="pb6">
+                            <div class="">
+                                <a href="#" class=" link">
+                                    <div role="img" class="relative link white br4" 
+                                    style="background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/10_02.png) no-repeat center center; background-size: cover; padding-top: 40%; width:16rem;">        
+                                    </div>
+                                    <div class="pt4">
+                                        <p class="ma0 white f6 fw5 fl mr2 measure-narrow">Образовательные программы для предпринимателей и маркетологов </p>   
+                                    </div>
+                                </a>               
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+<!--basement-->
+            <div class="pl5-l pl4 bg-base" id="projects">
+                <div class="cf ph5 pb4">
+                    <div class="w-third fl">
+                        <p class="lh-title tl f7 fw1 pa0 ma0 pt4 white-50 measure">
+                            ООО "Дизайн студия "Хамелеон"</br> 
+                            УНП 192024251</br> 
+                            Адрес:</br> 
+                            220125 г. Минск, ул. Платонова, д. 43, оф. 204</br>
+                        </p>
+                    </div>
+                    <div class="w-third fl">
+                        <p class="tc"><img class="" src="images/logo.png"></p>
+                    </div>
+                    <div class="w-third fl">
+                        <p class="lh-title tr f7 fw1 pa0 ma0 pt4 white-50 measure fr">
+                            Контакты: </br>
+                            +375 (44) 583-83-38</br>
+                            +375 (33) 373-73-99</br>
+                            manager@xameleon.by</br>
+                        </p>
+                    </div>   
+                </div>
+            </div>
+<!--scripts-->
+        <script  src="./script.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#sidebar").on("click","a", function (event){
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                });
+            });
+        </script>
     </body>
 </html>

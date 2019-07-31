@@ -1,6 +1,9 @@
 .bg-menu{
     background-color:rgba(25,24,28,1)
 }
+.bg-base{
+  background-color:rgba(34,38,41,1)
+}
 .xred{
     color: rgba(236,30,81,1);
 }
@@ -20,3 +23,92 @@ div.sticky {
 .f0{
     font-size: 9rem;
 }
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+    .card {
+      flex: 0 0 auto;
+    }
+  }
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    .card {
+      display: inline-block;
+    }
+  }
+
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+    height: 100%;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+   /* background: transparent;  /* Optional: just make scrollbar invisible */}
+
+   .pointer-events{
+    pointer-events: auto;
+  }
+
+
+  /*------------------*/
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  #sidebar, #content {
+    height: 100%;
+    overflow:auto;
+  }
+  
+  #sidebar {
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: -1000;
+    background: rgba(0,0,0,0.9);
+    width: 14rem;
+    
+    
+    transition: width .35s;
+  }
+  
+  #sidebar.collapsed {
+    width: 0;
+  }
+  
+  #content {
+    
+    width: 100%;
+  }
+  
+  button {
+    width: 16px;
+    height: 16px;
+    
+    border:none;
+    outline:none;
+    background: url(file:///F:/Documents/Studies/Practise/Chameleon/images/menu.svg);
+   
+    background-size: 100%;
+    cursor:pointer;
+  }
+  
+  #closer {
+    float:right;
+  }
+  
+  h3 {
+    text-align:center;
+    color:white;
+    font-family: sans-serif;
+  }
